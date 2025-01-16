@@ -1,0 +1,637 @@
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+    font-family: "Poppins", sans-serif;
+}
+
+
+:root {
+    --bg-theme: #DC3545;
+    --bg-light: white;
+    --text-light: black;
+    --bg-dark: black;
+    --text-dark: #f0f8ff;
+    /* #f0f8ff #faebd7 */
+}
+
+/* -------------------- preloader css ---------------------------- */
+
+@keyframes appear {
+    form {
+        opacity: 0;
+        scale: 0.5;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+
+}
+
+section {
+
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 25% cover 50%;
+
+}
+
+
+.preloader {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    gap: 20px;
+    background-color: var(--bg-dark);
+}
+
+
+
+.mylinks i {
+    color: var(--text-dark);
+    font-size: 20px;
+
+    &:hover {
+        color: var(--bg-theme);
+    }
+}
+
+
+@keyframes box {
+    to {
+        background-color: var(--bg-dark);
+    }
+}
+
+.preloder-child {
+    width: 20px;
+    height: 10px;
+    background-color: var(--bg-theme);
+}
+
+.child1 {
+    animation: box 1s infinite;
+}
+
+.child2 {
+    animation: box 1s calc(1s / 3 * (3 - 1) * -1) infinite;
+}
+
+.child3 {
+    animation: box 1s calc(1s / 3 * (3 - 2) * -1) infinite;
+}
+
+/* ----------------------------preloader css ---------------------------- */
+/* navbar css ---------------------------- */
+nav {
+    width: 100%;
+    height: 11vh;
+    background-color: var(--bg-dark);
+    background: transparent;
+    position: sticky !important;
+    top: 0px;
+    z-index: 2;
+}
+
+nav .website-logo {
+    font-size: 30px;
+}
+
+nav .nav-link {
+    font-size: 16px;
+}
+
+/* nav bar end here  */
+/* new -------------------- */
+.burger {
+    transform: rotate(90deg);
+    transform-origin: 50% 50%;
+    transition: all .3s .2s ease;
+
+}
+
+.main-icon {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.hamburger {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 2px;
+}
+
+.one {
+    position: relative;
+    transform-origin: 95% 200%;
+    transform: rotate(-45deg);
+    transition-delay: .25s;
+}
+
+.three {
+    position: relative;
+    transform-origin: 95% -100%;
+    transform: rotate(45deg);
+    transition-delay: .25s;
+
+
+}
+
+.two {
+    width: 1%;
+    background-color: rgb(0, 0, 0);
+    transition: all .3s ease;
+}
+
+.scrolled {
+    background-color: var(--bg-dark);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.under-start {
+    border-bottom: 2px solid var(--bg-theme);
+}
+
+
+
+/* navbar css ---------------------------- */
+
+
+/* home css ---------------------- */
+.main {
+    width: 100%;
+    height: 89vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-video {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    overflow: hidden;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.main-content {
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.myname {
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.myrole {
+    font-size: 35px;
+    margin-top: 20px;
+}
+.mylinks {
+    position: absolute;
+    top: 90%;
+    right: 5%;
+    z-index: 4;
+}
+/* .mylinks {
+    position: sticky;
+    width: 35% !important;
+    top: 90%;
+    right: 5%;
+    z-index: 4;
+} */
+
+/* home css ---------------------- */
+/* about css ------------------------------------------- */
+.bio {
+    font-size: medium;
+    line-height: 30px;
+}
+
+.myinfo {
+    font-size: large;
+}
+.myinfo > a {
+    white-space: wrap;
+}
+
+.main-image {
+    height: 80vh;
+    overflow: hidden;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.links li {
+    list-style: none;
+    margin-right: 35px;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.button {
+    padding: 10px 20px;
+    border: 2px solid white;
+    background-color: transparent;
+    border-radius: 30px;
+    color: white;
+
+    &:hover {
+        border: 2px solid var(--bg-theme);
+        color: var(--bg-theme);
+
+    }
+}
+
+
+.links a {
+    color: #f0f8ff;
+
+    &:hover {
+        color: var(--bg-theme);
+    }
+}
+
+.links .bi {
+    font-size: 30px;
+}
+
+.heading {
+    font-size: 60px;
+    font-weight: bold;
+    padding: 0px 0px 50px 0px;
+}
+
+.service-box {
+    width: 30%;
+    padding: 40px 60px;
+    background-color: #161616;
+    border-bottom: 3px solid rgba(255, 0, 0, 0);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+
+}
+
+.service-box:hover {
+    border-bottom: 3px solid var(--bg-theme);
+
+}
+
+.icon {
+    font-size: 60px;
+    color: var(--bg-theme);
+}
+
+
+/* about css ------------------------------------------- */
+/* resume css ------------------------------------------------- */
+p {
+    margin-bottom: 0;
+}
+
+.resume {
+    padding: 30px 50px;
+    background-color: #161616;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+    border-left: 3px solid var(--bg-theme);
+}
+
+.heading {
+    font-size: 60px;
+    font-weight: bold;
+    padding: 0px 0px 50px 0px;
+}
+
+.icon {
+    font-size: xx-large;
+    color: var(--bg-theme);
+}
+
+.skills {
+    padding: 20px 30px;
+    background-color: #161616;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+    border-bottom: 3px solid rgba(255, 0, 0, 0);
+}
+
+
+.link {
+    font-size: 50px;
+}
+
+.link:hover {
+    color: var(--bg-theme);
+}
+
+.right-arr {
+    font-size: 40px;
+    color: var(--bg-theme);
+}
+
+.resume-sec {
+    background-color: #101010;
+    color: var(--text-dark);
+}
+
+/* resume css ------------------------------------------------- */
+/* portfolio css ------------------------------------------------- */
+.heading {
+    font-size: 60px;
+    font-weight: bold;
+    padding: 0px 0px 50px 0px;
+    color: white;
+}
+
+.item-list li {
+    list-style-type: none;
+
+}
+
+/* filter portfolio gallery  */
+.portfolio-menu{
+	text-align:center;
+}
+.portfolio-menu ul li{
+	display:inline-block;
+	margin:0;
+	list-style:none;
+	padding:10px 15px;
+	cursor:pointer;
+	-webkit-transition:all 05s ease;
+	-moz-transition:all 05s ease;
+	-ms-transition:all 05s ease;
+	-o-transition:all 05s ease;
+	transition:all .5s ease;
+}
+
+/* .portfolio-item{
+	width:100%;
+} */
+.portfolio-item .item{
+	/*width:303px;*/
+	float:left;
+	margin-bottom:10px;
+}
+
+
+
+/* portfolio css ------------------------------------------------- */
+/* contact ----------------------------  */
+.heading {
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+}
+
+.icon {
+    font-size: 60px;
+    color: var(--bg-theme);
+}
+
+p {
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 19px;
+    color: white;
+}
+
+a:hover {
+    color: var(--main);
+}
+
+form {
+    width: 100%;
+}
+
+input,
+textarea {
+    margin: 20px 0px;
+    padding: 15px 20px;
+    color: white;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    background-color: #161616;
+    border-bottom: 3px solid rgba(255, 0, 0, 0);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+input:focus {
+    border-bottom: 3px solid var(--bg-theme);
+}
+
+textarea:focus {
+    border-bottom: 3px solid var(--bg-theme);
+}
+
+::placeholder {
+    color: white;
+    font-size: 20px;
+}
+
+.first {
+    width: 100%;
+}
+
+.first input {
+    width: 48%;
+}
+
+.second input {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+}
+
+input[type="submit"] {
+    background-color: #161616;
+    ;
+}
+
+input[type="submit"]:focus {
+    background-color: #e74857;
+}
+
+
+
+
+/* contact ----------------------------  */
+
+/* ----------------------- media query 1024px ----------------------- */
+@media only screen and (min-width: 1024px) {
+    .service-box {
+        width: 30%;
+
+    }
+}
+
+/* contact css */
+@media only screen and (min-width: 1024px) {
+    .first {
+        flex-direction: row;
+    }
+
+    input[type="submit"] {
+        width: 20%;
+        background-color: #161616;
+        ;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #e74857;
+    }
+}
+
+/* contact css */
+/* ----------------------- media query 1024px ----------------------- */
+/* ----------------------- media query 992px ----------------------- */
+/* navbar css  */
+@media only screen and (max-width: 992px) {
+    .navbar-collapse {
+        margin-top: 9px;
+        background-color: rgb(15, 15, 15);
+    }
+
+    .nav-item:hover {
+        background-color: var(--bg-theme);
+    }
+
+    .navbar-toggler {
+        background: none;
+        border: none;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
+}
+
+
+
+/* navbar css  */
+/* about css  */
+
+@media only screen and (max-width: 992px) {
+    .service-box {
+        width: 48%;
+    }
+}
+
+
+/* about css  */
+/* ----------------------- media query 992px ----------------------- */
+/* ----------------------- media query 600px ----------------------- */
+/* navbar css  */
+@media only screen and (max-width: 600px) {
+    .ekki {
+        position: relative;
+        transform-origin: 95% 200%;
+        transform: rotate(-45deg);
+        transition-delay: .25s;
+    }
+
+    .thiki {
+        position: relative;
+        transform-origin: 95% -100%;
+        transform: rotate(45deg);
+        transition-delay: .25s;
+
+
+    }
+
+    .dugi {
+        width: 1%;
+        background-color: rgb(0, 0, 0);
+        transition: all .3s ease;
+    }
+
+    .nav-link {
+        padding: 0px !important;
+    }
+
+    .nav-item {
+        padding: 15px !important;
+    }
+    
+}
+
+/* navbar css  */
+
+
+
+/* about css */
+@media only screen and (max-width: 600px) {
+    .service-box {
+        width: auto;
+    }
+
+    .main-image {
+        height: 60vh;
+        overflow: hidden;
+    }
+    .heading a {
+        margin: 0;
+    }
+}
+
+/* about css */
+/* contact css  */
+@media only screen and (max-width: 600px) {
+    .first {
+        flex-direction: column;
+    }
+
+    .first input {
+        width: 100% !important;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        background-color: var(--main);
+    }
+
+    .info {
+        text-align: center;
+    }
+}
+
+/* contact css  */
+/* ----------------------- media query 600px ----------------------- */

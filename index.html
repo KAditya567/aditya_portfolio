@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    
+
+    <!-- filters portfolio  -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+    <!-- custon style css  -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Aditya-Portfolio</title>
+</head>
+
+<body>
+    <!-- preloader section  -->
+    <section>
+        <div class="preloader" id="preloader">
+            <div class="preloder-child child1"></div>
+            <div class="preloder-child child2"></div>
+            <div class="preloder-child child3"></div>
+        </div>
+    </section>
+
+    <!-- navbar section  -->
+    <nav class="navbar navbar-expand-lg navbar-dark" id="navbar">
+        <div class="container">
+            <a class="navbar-brand website-logo" href="#">Aditya</a>
+            <button id="mainbutton" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <div id="mainicon" class="main-icon">
+                    <div id="one" class="hamburger"></div>
+                    <div id="two" class="hamburger"></div>
+                    <div id="three" class="hamburger"></div>
+                </div>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-lg-0 ms-auto nav-link">
+                    <li class="nav-item p-3">
+                        <a class="under-start nav-link active font-weight-light text-large " href="#"
+                            style="letter-spacing: 3px;" aria-current="page">HOME</a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a class="nav-link active font-weight-light text-large" href="#about"
+                            style="letter-spacing: 3px" aria-current="page">ABOUT</a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a class="nav-link active font-weight-light text-large" href="#resume"
+                            style="letter-spacing: 3px" aria-current="page">RESUME</a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a class="nav-link active font-weight-light text-large" href="#portfolio"
+                            style="letter-spacing: 3px" aria-current="page">PORTFOLIO</a>
+                    </li>
+                    <li class="nav-item p-3">
+                        <a class="nav-link active font-weight-light text-large" href="#contact"
+                            style="letter-spacing: 3px" aria-current="page">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+            <button class="toggle-icon" hidden>
+                <!-- <i class="bi bi-moon-fill"></i> -->
+                <i class="bi bi-brightness-high-fill"></i>
+            </button>
+            <!-- responsive m order krna h  -->
+
+        </div>
+    </nav>
+
+    <!-- main section  -->
+    <section id="main">
+        <div class="main">
+            <div class="bg-video">
+                <video autoplay loop muted src="assests/background-video.mp4"></video>
+            </div>
+            <div class="main-content d-flex">
+                <div>
+                    <h1 class="myname">Aditya Kumar</h1>
+                    <p class="myrole">I'm a <span id="role"></span></p>
+                </div>
+
+            </div>
+            <!-- scrollbar section  -->
+
+            <div class="mylinks">
+                <a href="#"><i class="bi bi-instagram"></i></a>&nbsp;&nbsp;
+                <a href="#"><i class="bi bi-linkedin"></i></a>&nbsp;&nbsp;
+                <a href="#"><i class="bi bi-github"></i></a>
+            </div>
+        </div>
+
+
+    </section>
+    <!-- about section  -->
+    <section id="about">
+        <div class=" text-light main-sec" style="background-color: #101010;">
+            <div class="container p-4 about">
+                <h1 class="heading my-5 text-center">About Me</h1>
+                <div class="row about justify-content-between">
+                    <div class="col-lg-5 main-image">
+                        <img src="assests/photo.jpg" alt="myimage" class="img-fluid" />
+                    </div>
+                    <div class="col-lg-7 about-me">
+                        <h2 class="py-2">Who am i ?</h2>
+                        <h4 class="py-2">
+                            Hello! I'M <span style="color: var(--bg-theme)">Aditya Kumar</span>.
+                        </h4>
+                        <p class="bio">
+                            I am a Web developer based in the New Delhi and i have been building
+                            noteworthy UX/UI designs and websites for years, which comply with the
+                            latest design trends. I help convert a vision and an idea into
+                            meaningful and useful products. Having a sharp eye for product
+                            evolution helps me prioritize tasks, iterate fast and deliver faster.
+                        </p>
+                        <hr style="margin: 35px 0px;" />
+                        <div class="row myinfo">
+                            <div class="col-lg-6">
+                                <p><b>Name&nbsp;:</b>&nbsp;&nbsp;Aditya Kumar</p>
+                                <p><b>age&nbsp;:</b>&nbsp;&nbsp;25</p>
+                            </div>
+                            <div class="col-lg-6">
+                                <p>
+                                    <b>Email:</b>&nbsp;&nbsp;<a style="text-decoration: none; color: var(--bg-theme)"
+                                        href="mailto:akaditya567@gmail.com">akaditya567gmail.com</a>
+                                </p>
+                                <p><b>from&nbsp;:</b>&nbsp;&nbsp;New Delhi</p>
+                            </div>
+                            <div class="row mt-4 align-items-center">
+                                <div class="col-lg-4 my-3">
+                                    <div>
+                                        <a class="button" href="Aditya_kumar - webdeveloper cv.pdf"
+                                            download="Aditya_kumar's-resume">Download CV</a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 my-3">
+                                    <ul class="links ps-3">
+                                        <li><a href="https://www.instagram.com/im_demon9801/profilecard/?igsh=MTFuaml6Z21mY3gzbQ=="
+                                                target="_blank"><i class="bi bi-instagram"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/in/aditya-kumar-81b574323/"
+                                                target="_blank"><i class="bi bi-linkedin"></i></a></li>
+                                        <li><a href="https://github.com/KAditya567" target="_blank"><i
+                                                    class="bi bi-github"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- my services section  -->
+        <div class="container-fluid  text-light py-5" style="background-color: #101010;">
+            <div class="container p-4 my-services">
+                <h1 class="heading">My Services</h1>
+                <div class="row justify-content-between">
+                    <div class="col-md-6 col-lg-4 my-4
+            col-sm-12 
+            service-box">
+                        <i class="bi bi-easel2 icon"></i>
+                        <h3 class="my-4">Design Trends</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="col-md-6 col-lg-4 my-4
+            col-sm-12
+             service-box">
+                        <i class="bi bi-filetype-css icon"></i>
+                        <h3 class="my-4">Design Trends</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="col-md-6 col-lg-4 my-4
+            col-sm-12
+             service-box">
+                        <i class="bi bi-wordpress icon"></i>
+                        <h3 class="my-4">Design Trends</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="col-md-6 col-lg-4 my-4  service-box">
+                        <i class="bi bi-images icon"></i>
+                        <h3 class="my-4">Design Trends</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="col-md-6 col-lg-4 my-4 service-box">
+                        <i class="bi bi-filetype-js icon"></i>
+                        <h3 class="my-4">Design Trends</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="col-md-6 col-lg-4 my-4 service-box">
+                        <i class="bi bi-filetype-php icon"></i>
+                        <h3 class="my-4">Design Trends</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- resume section  -->
+    <section id="resume">
+        <div class="container-fluid py-5 resume-sec">
+            <div class="container p-5">
+                <h1 class="text-center heading fw-bold">Resume
+                    <a href="Aditya_kumar - webdeveloper cv.pdf" download="Aditya_kumar's-resume" class="ms-5"><span><i
+                                class="bi bi-person-workspace link"></i></span></a>
+                </h1>
+                <div class="row justify-content-center mt-5">
+                    <div class="col-lg-9 resume my-3">
+                        <div style="position: relative;">
+                            <div style="position: absolute; top: -20px; left: -66px;"><i
+                                    class="bi bi-caret-right-fill right-arr"></i></div>
+                            <h4>Maac</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Consequuntur, rerum?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 resume my-3">
+                        <div style="position: relative;">
+                            <div style="position: absolute; top: -20px; left: -66px;"><i
+                                    class="bi bi-caret-right-fill right-arr"></i></div>
+                            <h4>Maac</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Consequuntur, rerum?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 resume my-3">
+                        <div style="position: relative;">
+                            <div style="position: absolute; top: -20px; left: -66px;"><i
+                                    class="bi bi-caret-right-fill right-arr"></i></div>
+                            <h4>12th class</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Consequuntur, rerum?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 resume my-3">
+                        <div style="position: relative;">
+                            <div style="position: absolute; top: -20px; left: -66px;"><i
+                                    class="bi bi-caret-right-fill right-arr"></i></div>
+                            <h4>10th class</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Consequuntur, rerum?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- my skills section  -->
+        <div class="container-fluid py-5 text-light resume-sec">
+            <div class="container px-4">
+                <h1 class="text-center heading fw-bold">My Skills</h1>
+                <div class="row justify-content-around">
+                    <div class="col-lg-5 skills mt-5">
+                        <h5>HTML 5</h5>
+                        <div class="d-flex flex-row align-items-center justify-content-between flex-row">
+                            <div class="col-sm-10 rounded d-flex flex-row" style="
+                      width: 81%;
+                      height: 6px;
+                      background-color: white;
+                      padding: 0px;
+                    ">
+                                <div class="rounded"
+                                    style="width: 80%; background-color: var(--bg-theme); height: auto">
+                                </div>
+                            </div>
+                            <div class="col-sm-2 text-center" style="width: 19%;">70%</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 skills mt-5">
+                        <h5>CSS 3</h5>
+                        <div class="d-flex flex-row align-items-center justify-content-between">
+                            <div class="col-sm-10 rounded d-flex" style="
+                      width: 81%;
+                      height: 6px;
+                      background-color: white;
+                      padding: 0px;
+                    ">
+                                <div class="rounded"
+                                    style="width: 80%; background-color: var(--bg-theme); height: auto">
+                                </div>
+                            </div>
+                            <div class="col-sm-2 text-center" style="width: 19%;">20%</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 skills mt-5">
+                        <h5>HTML 5</h5>
+                        <div class="d-flex flex-row align-items-center justify-content-between">
+                            <div class="col-sm-10 rounded d-flex" style="
+                        width: 81%;
+                        height: 6px;
+                        background-color: white;
+                        padding: 0px;
+                      ">
+                                <div class="rounded"
+                                    style="width: 80%; background-color: var(--bg-theme); height: auto">
+                                </div>
+                            </div>
+                            <div class="col-sm-2 text-center" style="width: 19%;">80%</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 skills mt-5">
+                        <h5>HTML 5</h5>
+                        <div class="d-flex flex-row align-items-center justify-content-between">
+                            <div class="col-sm-10 rounded d-flex" style="
+                        width: 81%;
+                        height: 6px;
+                        background-color: white;
+                        padding: 0px;
+                      ">
+                                <div class="rounded"
+                                    style="width: 80%; background-color: var(--bg-theme); height: auto">
+                                </div>
+                            </div>
+                            <div class="col-sm-2 text-center" style="width: 19%;">80%</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 skills mt-5">
+                        <h5>HTML 5</h5>
+                        <div class="d-flex flex-row align-items-center justify-content-between">
+                            <div class="col-sm-10 rounded d-flex" style="
+                        width: 81%;
+                        height: 6px;
+                        background-color: white;
+                        padding: 0px;
+                      ">
+                                <div class="rounded"
+                                    style="width: 80%; background-color: var(--bg-theme); height: auto">
+                                </div>
+                            </div>
+                            <div class="col-sm-2 text-center" style="width: 19%;">80%</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 skills mt-5">
+                        <h5>HTML 5</h5>
+                        <div class="d-flex flex-row align-items-center justify-content-between">
+                            <div class="col-sm-10 rounded d-flex" style="
+                        width: 85%;
+                        height: 6px;
+                        background-color: white;
+                        padding: 0px;
+                      ">
+                                <div class="rounded"
+                                    style="width: 80%; background-color: var(--bg-theme); height: auto">
+                                </div>
+                            </div>
+                            <div class="col-sm-2 text-center" style="width: 19%;">80%</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- my projects section  -->
+        <div class="container-fluid py-5 text-light main-sec" style="background-color: #101010">
+            <div class="container px-4">
+                <h1 class="text-center heading fw-bold">My Projects
+                    <a href="https://github.com/KAditya567" target="_blank" class="ms-5"><i
+                            class="bi bi-github link"></i></a>
+                </h1>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 resume my-3" style="position: relative;">
+                        <div style="position: absolute; top: 10px; left: -15px;"><i
+                                class="bi bi-caret-right-fill right-arr"></i></div>
+                        <h5>Project name</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="col-lg-8 resume my-3" style="position: relative;">
+                        <div style="position: absolute; top: 10px; left: -15px;"><i
+                                class="bi bi-caret-right-fill right-arr"></i></div>
+                        <h5>Project name</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="col-lg-8 resume my-3" style="position: relative;">
+                        <div style="position: absolute; top: 10px; left: -15px;"><i
+                                class="bi bi-caret-right-fill right-arr"></i></div>
+                        <h5>Project name</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                    <div class="col-lg-8 resume my-3" style="position: relative;">
+                        <div style="position: absolute; top: 10px; left: -15px;"><i
+                                class="bi bi-caret-right-fill right-arr"></i></div>
+                        <h5>Project name</h5>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- portfolio section  -->
+    <section id="portfolio">
+        <div class="container-fluid text-light py-5" style="background-color: #101010">
+            <div class="container text-center">
+                <div>
+                    <h1 class="heading">Portfolio</h1>
+                    <p>
+                        It is a long established fact that a reader will be of a page when
+                        established fact looking at its layout.
+                    </p>
+                </div>
+                <!-- <div class="item-list row my-5">
+                    <ul class="d-flex justify-content-center" style="display: inline-block; width: 25%; margin: auto">
+                        <li>
+                            <a>All</a>
+                        </li>
+                        <li>
+                            <a>Graphic</a>
+                        </li>
+                        <li>
+                            <a>UI/UX</a>
+                        </li>
+                        <li>
+                            <a>Web</a>
+                        </li>
+                    </ul>
+                </div> -->
+                <div class="container">
+                    <!-- <div class="row">
+                       <div class="col-lg-12 text-center my-2">
+                           <h4>Isotope filter magical layouts with Bootstrap 4</h4>
+                       </div>
+                    </div> -->
+                    <div class="portfolio-menu mt-2 my-5">
+                        <ul>
+                            <li class="btn btn-outline-dark active" data-filter="*">All</li>
+                            <li class="btn btn-outline-dark" data-filter=".gts">Graphic</li>
+                            <li class="btn btn-outline-dark" data-filter=".lap">UI/UX</li>
+                            <li class="btn btn-outline-dark text" data-filter=".selfie">Web</li>
+                        </ul>
+                    </div>
+                    <div class="portfolio-item row">
+                        <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                            <a href="https://image.freepik.com/free-photo/stylish-young-woman-with-bags-taking-selfie_23-2147962203.jpg"
+                                class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid"
+                                    src="https://image.freepik.com/free-photo/stylish-young-woman-with-bags-taking-selfie_23-2147962203.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+                            <a href="https://image.freepik.com/free-photo/pretty-girl-near-car_1157-16962.jpg"
+                                class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid"
+                                    src="https://image.freepik.com/free-photo/pretty-girl-near-car_1157-16962.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                            <a href="https://image.freepik.com/free-photo/blonde-tourist-taking-selfie_23-2147978899.jpg"
+                                class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid"
+                                    src="https://image.freepik.com/free-photo/blonde-tourist-taking-selfie_23-2147978899.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+                            <a href="https://image.freepik.com/free-photo/cute-girls-oin-studio_1157-18211.jpg"
+                                class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid"
+                                    src="https://image.freepik.com/free-photo/cute-girls-oin-studio_1157-18211.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+                            <a href="https://image.freepik.com/free-photo/stylish-pin-up-girls_1157-18451.jpg"
+                                class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid"
+                                    src="https://image.freepik.com/free-photo/stylish-pin-up-girls_1157-18451.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+                            <a href="https://image.freepik.com/free-photo/stylish-pin-up-girl_1157-18940.jpg"
+                                class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid"
+                                    src="https://image.freepik.com/free-photo/stylish-pin-up-girl_1157-18940.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+                            <a href="https://image.freepik.com/free-photo/digital-laptop-working-global-business-concept_53876-23438.jpg"
+                                class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid"
+                                    src="https://image.freepik.com/free-photo/digital-laptop-working-global-business-concept_53876-23438.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+                            <a href="https://image.freepik.com/free-psd/set-digital-devices-screen-mockup_53876-76507.jpg"
+                                class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid"
+                                    src="https://image.freepik.com/free-psd/set-digital-devices-screen-mockup_53876-76507.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+                            <a href="https://image.freepik.com/free-photo/young-brunette-woman-with-sunglasses-urban-background_1139-893.jpg"
+                                class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid"
+                                    src="https://image.freepik.com/free-photo/young-brunette-woman-with-sunglasses-urban-background_1139-893.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+                            <a href="https://image.freepik.com/free-psd/laptop-digital-device-screen-mockup_53876-76509.jpg"
+                                class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid"
+                                    src="https://image.freepik.com/free-psd/laptop-digital-device-screen-mockup_53876-76509.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+                            <a href="https://image.freepik.com/free-photo/young-woman-holding-pen-hand-thinking-while-writing-notebook_23-2148029424.jpg"
+                                class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid"
+                                    src="https://image.freepik.com/free-photo/young-woman-holding-pen-hand-thinking-while-writing-notebook_23-2148029424.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+                            <a href="https://image.freepik.com/free-psd/female-fashion-concept_23-2147643598.jpg"
+                                class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid"
+                                    src="https://image.freepik.com/free-psd/female-fashion-concept_23-2147643598.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+                            <a href="https://image.freepik.com/free-photo/girl-city_1157-16454.jpg"
+                                class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid"
+                                    src="https://image.freepik.com/free-photo/girl-city_1157-16454.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+                            <a href="https://image.freepik.com/free-photo/elegant-lady-with-laptop_1157-16643.jpg"
+                                class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid"
+                                    src="https://image.freepik.com/free-photo/elegant-lady-with-laptop_1157-16643.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+                            <a href="https://image.freepik.com/free-psd/laptop-mock-up-lateral-view_1310-199.jpg"
+                                class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid"
+                                    src="https://image.freepik.com/free-psd/laptop-mock-up-lateral-view_1310-199.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+                            <a href="https://image.freepik.com/free-photo/portrait-young-woman_1303-10071.jpg"
+                                class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid"
+                                    src="https://image.freepik.com/free-photo/portrait-young-woman_1303-10071.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+                            <a href="https://image.freepik.com/free-photo/beautiful-girl-near-wall_1157-16401.jpg"
+                                class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid"
+                                    src="https://image.freepik.com/free-photo/beautiful-girl-near-wall_1157-16401.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                            <a href="https://image.freepik.com/free-photo/woman-taking-photograph-her-boyfriend-enjoying-piggyback-ride-his-back_23-2147841613.jpg"
+                                class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid"
+                                    src="https://image.freepik.com/free-photo/woman-taking-photograph-her-boyfriend-enjoying-piggyback-ride-his-back_23-2147841613.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                            <a href="https://image.freepik.com/free-photo/girl-smiling-making-auto-photo-with-her-friends-around_1139-593.jpg"
+                                class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid"
+                                    src="https://image.freepik.com/free-photo/girl-smiling-making-auto-photo-with-her-friends-around_1139-593.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                            <a href="https://image.freepik.com/free-photo/multiracial-group-young-people-taking-selfie_1139-1032.jpg"
+                                class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid"
+                                    src="https://image.freepik.com/free-photo/multiracial-group-young-people-taking-selfie_1139-1032.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+                            <a href="https://image.freepik.com/free-photo/laptop-wooden-table_53876-20635.jpg"
+                                class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid"
+                                    src="https://image.freepik.com/free-photo/laptop-wooden-table_53876-20635.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+                            <a href="https://image.freepik.com/free-photo/business-woman-working-laptop_1388-67.jpg"
+                                class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid"
+                                    src="https://image.freepik.com/free-photo/business-woman-working-laptop_1388-67.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+                            <a href="https://image.freepik.com/free-psd/group-people-holding-laptop-mockup-charity_23-2148069565.jpg"
+                                class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid"
+                                    src="https://image.freepik.com/free-psd/group-people-holding-laptop-mockup-charity_23-2148069565.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+                            <a href="https://image.freepik.com/free-photo/portrait-young-cheerful-woman-headphones-sitting-stairs_1262-17488.jpg"
+                                class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid"
+                                    src="https://image.freepik.com/free-photo/portrait-young-cheerful-woman-headphones-sitting-stairs_1262-17488.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+                            <a href="https://image.freepik.com/free-photo/celebration-concept-close-up-portrait-happy-young-beautiful-african-woman-black-t-shirt-smiling-with-colorful-party-balloon-yellow-pastel-studio-background_1258-934.jpg"
+                                class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid"
+                                    src="https://image.freepik.com/free-photo/celebration-concept-close-up-portrait-happy-young-beautiful-african-woman-black-t-shirt-smiling-with-colorful-party-balloon-yellow-pastel-studio-background_1258-934.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="item gts col-lg-3 col-md-4 col-6 col-sm">
+                            <a href="https://image.freepik.com/free-photo/pretty-woman-showing-arm-muscles_23-2148056021.jpg"
+                                class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid"
+                                    src="https://image.freepik.com/free-photo/pretty-woman-showing-arm-muscles_23-2148056021.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+                            <a href="https://image.freepik.com/free-photo/blank-colorful-adhesive-notes-against-wooden-wall-with-office-stationeries-laptop_23-2148052717.jpg"
+                                class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid"
+                                    src="https://image.freepik.com/free-photo/blank-colorful-adhesive-notes-against-wooden-wall-with-office-stationeries-laptop_23-2148052717.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+                            <a href="https://image.freepik.com/free-photo/happy-woman-having-video-call-using-laptop-office_23-2148056211.jpg"
+                                class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid"
+                                    src="https://image.freepik.com/free-photo/happy-woman-having-video-call-using-laptop-office_23-2148056211.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+                            <a href="https://image.freepik.com/free-psd/laptop-mockup-table-with-plants_23-2147955548.jpg"
+                                class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid"
+                                    src="https://image.freepik.com/free-psd/laptop-mockup-table-with-plants_23-2147955548.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+                            <a href="https://image.freepik.com/free-photo/blank-colorful-adhesive-notes-against-wooden-wall-with-office-stationeries-laptop_23-2148052717.jpg"
+                                class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid"
+                                    src="https://image.freepik.com/free-photo/blank-colorful-adhesive-notes-against-wooden-wall-with-office-stationeries-laptop_23-2148052717.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+                            <a href="https://image.freepik.com/free-psd/woman-using-laptop-smartphone_53876-76350.jpg"
+                                class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid"
+                                    src="https://image.freepik.com/free-psd/woman-using-laptop-smartphone_53876-76350.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                            <a href="https://image.freepik.com/free-photo/attractive-young-woman-with-curly-hair-takes-selfie-posing-looking-camera_8353-6636.jpg"
+                                class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid"
+                                    src="https://image.freepik.com/free-photo/attractive-young-woman-with-curly-hair-takes-selfie-posing-looking-camera_8353-6636.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                            <a href="https://image.freepik.com/free-photo/young-couple-taking-selfie-mobile-phone-against-blue-background_23-2148056292.jpg"
+                                class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid"
+                                    src="https://image.freepik.com/free-photo/young-couple-taking-selfie-mobile-phone-against-blue-background_23-2148056292.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="item lap col-lg-3 col-md-4 col-6 col-sm">
+                            <a href="https://image.freepik.com/free-photo/close-up-blonde-woman-sitting-sofa-using-laptop-with-blank-white-screen_23-2148028738.jpg"
+                                class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid"
+                                    src="https://image.freepik.com/free-photo/close-up-blonde-woman-sitting-sofa-using-laptop-with-blank-white-screen_23-2148028738.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                            <a href="https://image.freepik.com/free-photo/group-happy-friends-taking-selfie-cellphone_23-2147859575.jpg"
+                                class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid"
+                                    src="https://image.freepik.com/free-photo/group-happy-friends-taking-selfie-cellphone_23-2147859575.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                            <a href="https://image.freepik.com/free-photo/joyful-pretty-girl-with-curly-hair-takes-selfie-mobile-phone_8353-6635.jpg"
+                                class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid"
+                                    src="https://image.freepik.com/free-photo/joyful-pretty-girl-with-curly-hair-takes-selfie-mobile-phone_8353-6635.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                            <a href="https://image.freepik.com/free-photo/attractive-young-woman-with-curly-hair-takes-selfie-posing-looking-camera_8353-6636.jpg"
+                                class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid"
+                                    src="https://image.freepik.com/free-photo/attractive-young-woman-with-curly-hair-takes-selfie-posing-looking-camera_8353-6636.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                            <a href="https://image.freepik.com/free-photo/multiracial-group-young-people-taking-selfie_1139-1032.jpg"
+                                class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid"
+                                    src="https://image.freepik.com/free-photo/multiracial-group-young-people-taking-selfie_1139-1032.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="item selfie col-lg-3 col-6 col-sm">
+                            <a href="https://image.freepik.com/free-photo/two-smiling-girls-take-selfie-their-phones-posing-with-lollipops_8353-5600.jpg"
+                                class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid"
+                                    src="https://image.freepik.com/free-photo/two-smiling-girls-take-selfie-their-phones-posing-with-lollipops_8353-5600.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                            <a href="https://image.freepik.com/free-photo/female-friends-sitting-car-hood-taking-self-portrait_23-2147855623.jpg"
+                                class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid"
+                                    src="https://image.freepik.com/free-photo/female-friends-sitting-car-hood-taking-self-portrait_23-2147855623.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                        <div class="item selfie col-lg-3 col-md-4 col-6 col-sm">
+                            <a href="https://image.freepik.com/free-photo/two-smiling-girls-take-selfie-their-phones-posing-with-lollipops_8353-5600.jpg"
+                                class="fancylight popup-btn" data-fancybox-group="light">
+                                <img class="img-fluid"
+                                    src="https://image.freepik.com/free-photo/two-smiling-girls-take-selfie-their-phones-posing-with-lollipops_8353-5600.jpg"
+                                    alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact section  -->
+    <section id="contact">
+        <div class="container-fluid py-5 text-center" style="background-color: #101010; color: white">
+            <div class="container">
+                <div class="row my-5">
+                    <div class="col-lg-12">
+                        <h1 class="heading">Contact Info</h1>
+                        <p class="mt-3">
+                            If the right project comes along, Feel free to contact me!
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-sm-12 info">
+                        <i class="bi bi-phone icon"></i>
+                        <h3>Call Us On</h3>
+                        <p>+91 9910546369</p>
+                    </div>
+                    <div class="col-md-6 col-sm-12 info">
+                        <i class="bi bi-envelope icon"></i>
+                        <h3>Email</h3>
+                        <p><a style="color: var(--bg-theme); text-decoration: none; "
+                                href="mailto:imdemon9801@gmail.com">imdemon9801gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="row text-start my-5">
+                    <div class="col-lg-12">
+                        <h1 class="heading my-5">Get In Touch</h1>
+                        <h2>Message Me</h2>
+                        <form action="forms/contact.php" name="form" onsubmit="sendEmail(); reset(); return false;"
+                            method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="600"></form>
+                        <div class="first d-flex justify-content-between">
+                            <input type="text" id="name" placeholder="Name" required />
+                            <input type="email" id="email" placeholder="Email" required />
+                        </div>
+                        <div class="second">
+                            <input type="text" id="subject" placeholder="subject" required />
+                        </div>
+                        <div class="third">
+                            <textarea rows="8" name="textarea" id="textarea" placeholder="Your message..."></textarea>
+                            <input type="submit" value="Send Message" />
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- email js script  -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <!-- typed js animation script  -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- custon script js  -->
+    <script src="script.js"></script>
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
